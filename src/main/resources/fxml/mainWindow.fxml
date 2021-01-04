@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.micorservise.kilejnt.client.controler.mainWinControler">
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="360.0" spacing="30.0">
+               <children>
+                  <Button fx:id="infoButton" mnemonicParsing="false" onAction="#infoAction" prefHeight="33.0" prefWidth="100.0" text="Info">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cardButton" mnemonicParsing="false" onAction="#cardAction" prefHeight="33.0" prefWidth="100.0" text="Cards">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#logOutAction" prefHeight="33.0" prefWidth="100.0" text="Log Out">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" prefHeight="600.0" prefWidth="360.0" spacing="30.0">
+               <children>
+                  <Button fx:id="flightButton" mnemonicParsing="false" onAction="#flightAction" prefHeight="33.0" prefWidth="100.0" text="Flights">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buyTButton" mnemonicParsing="false" onAction="#buyTAction" prefHeight="33.0" prefWidth="100.0" text="Buy Tickets">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="shopTButton" mnemonicParsing="false" onAction="#showTAction" prefHeight="33.0" prefWidth="100.0" text="Show Tickets">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User control" BorderPane.alignment="TOP_LEFT">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </top>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</BorderPane>

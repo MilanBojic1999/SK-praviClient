@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.micorservise.kilejnt.client.controler.infoControler">
+    <children>
+        <HBox alignment="CENTER" prefHeight="84.0" prefWidth="500.0" spacing="20.0">
+            <children>
+                <Text lineSpacing="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ime" wrappingWidth="75.0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="imaTF" disable="true" editable="false" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="84.0" prefWidth="500.0" spacing="20.0">
+            <children>
+                <Text lineSpacing="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prezime" wrappingWidth="75.0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="prezimeTF" disable="true" editable="false" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="84.0" prefWidth="500.0" spacing="20.0">
+            <children>
+                <Text lineSpacing="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="75.0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="emailTF" disable="true" editable="false" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="84.0" prefWidth="500.0" spacing="20.0">
+            <children>
+                <Text lineSpacing="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sifra" wrappingWidth="75.0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="siftaTF" disable="true" editable="false" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="84.0" prefWidth="500.0" spacing="20.0">
+            <children>
+                <Text lineSpacing="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasos" wrappingWidth="75.0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="pasosTF" disable="true" editable="false" />
+            </children>
+        </HBox>
+      <HBox alignment="CENTER" prefHeight="84.0" prefWidth="500.0" spacing="20.0">
+         <children>
+            <Text lineSpacing="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank" wrappingWidth="75.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <HBox fx:id="rankBox" alignment="CENTER" prefHeight="76.0" prefWidth="150.0">
+               <children>
+                  <Text fx:id="rankTxt" fill="#d38e52" strokeType="OUTSIDE" strokeWidth="0.0" text="Bronze">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+            <children>
+                <Button fx:id="chButton" mnemonicParsing="false" onAction="#change" prefHeight="30.0" prefWidth="100.0" text="Change">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</VBox>
